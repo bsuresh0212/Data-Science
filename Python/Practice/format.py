@@ -18,4 +18,22 @@ print('{0:.3f}'.format(1.0/1.0))
 print('{0:.^20}'.format('SureshB'))
 
 #keyword-based 
+
 print('{name} from {place}'.format(name = "SureshB",place="Gudiyatham"))
+
+###########
+# print statement
+#print default added \n (new line) 
+###########
+
+#print function to remove new line
+print("Hello",end="")
+print("Guys",end="")
+
+print("Hello",end=" ")
+print("Guys",end=" ")
+
+#Escape sequence(negelate the character next to \)
+#we want like this type of string to print -- > (what's yout name ?)
+print('what\'s your name')
+

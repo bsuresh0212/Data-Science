@@ -19,8 +19,7 @@ print ("divide and modulo")
 print ("12 x 10 : ", 12/10)
 print ("12 x 10 : ", 12%10)
 
-for i in seq(1,10):
-	print("12 * %d : ",i)
+
 
 
 
