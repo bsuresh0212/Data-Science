@@ -1,7 +1,7 @@
 print ("Multiplication")
-print ("3 * 5 : ", 3*5)
+print ("3 * 5 : ", 3*5) #simple mul operation using string and operator
 
-print ("Print 12 th table multiplication")
+print ("Print 12 th table multiplication") #to build a multiplication table
 
 print ("12 x 1  : ", 12*1)
 print ("12 x 2  : ", 12*2)
@@ -16,8 +16,8 @@ print ("12 x 10 : ", 12*10)
 
 print ("divide and modulo")
 
-print ("12 x 10 : ", 12/10)
-print ("12 x 10 : ", 12%10)
+print ("12 x 10 : ", 12/10) #divide operator return quotient
+print ("12 x 10 : ", 12%10) #modulo operator returns reminder
 
 
 

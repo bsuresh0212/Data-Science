@@ -9,6 +9,7 @@ celsius = int(input()) # 1.input ==> deceimal values shows error
 fah = (32+((9/5)*celsius))
 print(fah)
 
+cel = float(input("hello i m here"))
 
 
 
