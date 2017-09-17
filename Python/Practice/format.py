@@ -11,7 +11,7 @@ print('{0} was {1} years old'.format(name,age))
 print('{} was {} years old'.format(name,age))
 
 #decimal (.) precision of 3 for float '0.333'
-print('{0:.3f}'.format(1.0/1.0))
+print('{0:.5f}'.format(1.0/1.0))
 
 #fill with underscore(_) with the text centered
 #(^) to 11 width ''
