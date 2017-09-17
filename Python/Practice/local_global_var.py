@@ -12,5 +12,13 @@ fun(x)
 print('x is still',x)
 
 # global variable change globally
-#using global variable
+#using global keyword
+def global_fun():
+    global x
+    print('Global x value ,',x)
+    x = 2
+    print("Global value is changed ",x)
+
+global_fun()
+print("After changed the global value x is",x)
 
