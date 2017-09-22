@@ -13,6 +13,8 @@ print(os.getcwd())
 
 
 #import only one module from math module like this
-from math import sqrt
+from math import sqrt 
+#please avoid this type import module 
+#because will avoid name clashes and will be more readable
 
 print('The Sqrt of the 16 is ',sqrt(16))
