@@ -1,3 +1,5 @@
+#find the 1st and last index of the list
+
 if __name__ == '__main__':
     def listArrange(getList):
         return [getList[0],getList[-1]]

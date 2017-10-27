@@ -1,3 +1,4 @@
+#odd or even number
 if __name__ == '__main__':
     try:
         getNum = int(input('Enter the number \t'))
