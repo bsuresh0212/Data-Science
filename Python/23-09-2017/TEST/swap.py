@@ -1,6 +1,12 @@
-def swap(a,b):
-    print("Before swap a = %d , b = %d" %(a,b))
-    print("After swap a = %d , b = %d" %(a+b-a,a+b-b))
+def swap(x,y):
+    ''' print("Before swap x = %d , y = %d" %(x,y))
+    x = x + y  
+    y = x - y
+    x = x - y
+    print("Before swap x = %d , y = %d" %(x,y)) '''
+    #simply in python
+    
+    print("Before swap x = %d , y = %d" %(x,y))
 try:
     user_int = input('Enter a two nuber a swap \t')
     num = user_int.split()
