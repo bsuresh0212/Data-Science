@@ -35,6 +35,11 @@ if __name__ == '__main__':
     students = sorted(students, key=lambda x: x[1])
     sm1 = students[0][1]
     sm2 = students[1][1]
+    if sm1 == sm2:
+        for idx,stu in enumerate(students):
+            if sm1 < stu[1]:
+                sm2 = stu[1]
+                break;
     if sm1 < sm2: 
         for idx,stu in enumerate(students):
             if sm2 == stu[1]:
