@@ -1,16 +1,8 @@
-''' x,k = map ( int , input().split())
-tot = 0
-for a in range(1,k+1):
-    print(a)
-    tot += x ** k
-if tot == k:
-    print('True')
-else:
-    print('False')import re
+import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
- 
+
 class TwitterClient(object):
     '''
     Generic Twitter Class for sentiment analysis.
@@ -20,10 +12,10 @@ class TwitterClient(object):
         Class constructor or initialization method.
         '''
         # keys and tokens from the Twitter Dev Console
-        consumer_key = 'XXXXXXXXXXXXXXXXXXXXXXXX'
-        consumer_secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-        access_token = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-        access_token_secret = 'XXXXXXXXXXXXXXXXXXXXXXXXX'
+        consumer_key = 'xxxx'
+        consumer_secret = 'xxx'
+        access_token = 'xxxx'
+        access_token_secret = 'xxxxx'
  
         # attempt authentication
         try:
@@ -41,8 +33,7 @@ class TwitterClient(object):
         Utility function to clean tweet text by removing links, special characters
         using simple regex statements.
         '''
-        return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])
-                                    |(\w+:\/\/\S+)", " ", tweet).split())
+        return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", tweet).split())
  
     def get_tweet_sentiment(self, tweet):
         '''
@@ -100,18 +91,19 @@ def main():
     api = TwitterClient()
     # calling function to get tweets
     tweets = api.get_tweets(query = 'Donald Trump', count = 200)
- 
     # picking positive tweets from tweets
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
     # percentage of positive tweets
-    print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
+    print("Positive tweets percentage: {0:.2f} %".format(100*len(ptweets)/len(tweets)))
     # picking negative tweets from tweets
     ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative']
     # percentage of negative tweets
-    print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
+    print("Negative tweets percentage: {0:.2f} %".format(100*len(ntweets)/len(tweets)))
     # percentage of neutral tweets
-    print("Neutral tweets percentage: {} % \
-        ".format(100*len(tweets - ntweets - ptweets)/len(tweets)))
+    totTweets = len(tweets)
+    totNtweets = len(ntweets)
+    totPtweets = len(ptweets)
+    print("Neutral tweets percentage: {0:.2f} %".format(100*(totTweets - totNtweets - totPtweets)/len(tweets)))
  
     # printing first 5 positive tweets
     print("\n\nPositive tweets:")
@@ -126,10 +118,3 @@ def main():
 if __name__ == "__main__":
     # calling main function
     main()
-
-    2 15
-x**4 - x + 1 '''
-
-x,k = map ( int , input().split())
-s= input()
-print(eval(s) == k)

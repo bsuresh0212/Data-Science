@@ -3,10 +3,9 @@
 ''' 
 with open('file.txt','w') as openFile:
     openFile.write('Hey this added by me') '''
-
-
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup   
+##scraper and selium tool
  
 base_url = 'http://www.nytimes.co'
 r = requests.get(base_url)
